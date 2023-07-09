@@ -145,3 +145,21 @@ h2.logo {
 /* header */
 
 
+/* Banner */
+#banner {
+    min-height: 726px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text {
+    padding-left: 20%;
+}
+
+#banner img {
+    align-self: end;
+    padding-right: 6%;
+}
+
+/* Banner */
