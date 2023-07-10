@@ -59,16 +59,34 @@ body{
 }
 
 .container {
-    width: 1140px;
+    width: 1280px;
     max-width: 100%;
+}
+
+.btn {
+    padding: 16px 48px;
+    font-size: 20px;
+    line-height: normal;
+    font-style: normal;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .main_btn {
     background-color: #FD6E0A;
-    border-radius: 5px;
-    border: 0;
-    outline: 0;
     color: #ffffff;
+    border-color: transparent;
+    font-weight: 700;
+}
+
+.alt_btn{
+    background-color: #ffffff;
+    color: #FD6E0A;
+    border-color: #FD6E0A;
+    font-weight: 700;
 }
 
 /* global styles */
@@ -76,22 +94,6 @@ body{
 
 /* header */
 
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #FFF8F3;
-}
-
-header .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 
 header {
     width: 100%;
@@ -99,11 +101,6 @@ header {
     flex-direction: column;
     align-items: center;
     background: #FFF8F3;
-}
-
-.container {
-    width: 1140px;
-    max-width: 100%;
 }
 
 header .container {
@@ -127,10 +124,6 @@ nav ul li a {
     font-size: 20px;
 }
 
-nav .main_btn {
-    padding: 16px 48px;
-}
-
 h2.logo span {
     color: #FD6E0A;
 }
@@ -149,17 +142,53 @@ h2.logo {
 #banner {
     min-height: 726px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF8F3;
+    background-image: url("/images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .banner-text {
-    padding-left: 20%;
+    padding-left: 16.5%;
 }
 
 #banner img {
     align-self: end;
-    padding-right: 6%;
+    padding-right: 5%;
+}
+
+.banner-text p:first-child {
+    font-size: 45px;
+    line-height: normal;
+    font-style: normal;
+    color: #474747;
+    padding-bottom: 5px;
+}
+
+.banner-text h3 {
+    font-size: 85px;
+    line-height: normal;
+    font-style: normal;
+    font-weight: 700;
+    color: #181818;
+    padding-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    line-height: normal;
+    font-style: normal;
+    color: #757575;
+    padding-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
 }
 
 /* Banner */
